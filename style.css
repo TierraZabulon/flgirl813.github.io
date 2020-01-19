@@ -15,15 +15,26 @@ header { background-color:darksalmon;
 }
 
 
+* Projects ------------------------------*/
 
-/* Projects ------------------------------*/
-
-
+.projects {
+	background-color: antiquewhite;
+}
 /* Work Experience--------------------------*/
 
+.work{
+	background-color: rgba(204, 232, 204, 1);
+}
 
 /* Education---------------------------------*/
 
+.education{
+	background-color:rgba(246, 239, 238, 1);
+}
 
 
 /* Contact ----------------------------------*/
+
+.contact {
+	background-color:rgba(226, 182, 207, 1);
+}
