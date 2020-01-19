@@ -12,14 +12,37 @@ body { color:grey;
 /*Profile---------------------------------*/
 
 header { background-color:darksalmon;
+	
 }
 
 
-* Projects ------------------------------*/
 
-.projects {
+
+/* Projects ------------------------------*/
+
+.project {
 	background-color: antiquewhite;
 }
+
+.project a {
+	color:blue;
+}
+.project a {
+	background-color:aqua;
+}
+
+	.project a {text-decoration: none;
+}
+	.project a {padding:8px;
+	border-radius: 4px;
+	
+}
+
+.project a hover {
+	background-color: darkblue  80%;
+}
+
+
 /* Work Experience--------------------------*/
 
 .work{
