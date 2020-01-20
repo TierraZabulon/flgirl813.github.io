@@ -2,12 +2,57 @@
 
 /* Global Styles --------------------------- */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 img {
   width: 300px; height: 300px;
 }
 
-body { color:grey;
+body {
+	color:grey;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	
 }
+
+
+a {
+	color:green;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h2{
+	
+}
+.content-wrap {
+	width: 800px;
+	margin: 0 auto;
+	padding: 60px 0;
+		
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 1;
+}
+
+h1 , h2 {
+	font-family:'Caveat', cursive;
+	margin: 0;
+}
+
 
 /*Profile---------------------------------*/
 
@@ -18,7 +63,12 @@ header { background-color:darksalmon;
 
 
 
-/* Projects ------------------------------*/
+/* Projects ------------------------------
+ notes- figure out why hover is not working correctly*/
+
+.project a {
+	color:darkblue;
+}
 
 .project {
 	background-color: antiquewhite;
@@ -27,19 +77,35 @@ header { background-color:darksalmon;
 .project a {
 	color:blue;
 }
-.project a {
-	background-color:aqua;
-}
-
-	.project a {text-decoration: none;
-}
-	.project a {padding:8px;
+ .btn{
+	color:grey;
+	background:darksalmon;
+	text-decoration: none;
+	padding: 8px;
 	border-radius: 4px;
-	
+	display: inline-block;
+		
 }
 
-.project a hover {
-	background-color: darkblue  80%;
+
+.btn:hover {
+	background-color: rgba(246, 239, 238, 1)  80%;
+}
+
+.project-item {
+	overflow: hidden;
+	border-bottom: 1px dashed red;
+	padding: 25px 0;
+}
+
+.project-item img {
+	float: left;
+	margin: 20px;
+		
+}
+
+.project-item h3 {
+	margin-top: 0;
 }
 
 
