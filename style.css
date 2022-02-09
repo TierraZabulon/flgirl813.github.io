@@ -1,129 +1,81 @@
-/* CSS Document */
-
-/* Global Styles --------------------------- */
-
-html {
+/* Box Model Hack */
+* {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
-
-img {
-  width: 300px; height: 300px;
+.clear {
+  clear: both;
 }
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
 
 body {
-	color:grey;
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
-	
+  font-family: "Lato", sans-serif;
+  background-color: white;
 }
 
-
-a {
-	color:green;
+/******************************************
+/* LAYOUT
+/*******************************************/
+.background {
+  width: 100%;
+  height: 600px;
+  background-image: url(/pink.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.main ul {
+  text-align: center;
 
-a:hover {
-	text-decoration: none;
+  list-style: none;
 }
-
-h2{
-	
-}
-.content-wrap {
-	width: 800px;
-	margin: 0 auto;
-	padding: 60px 0;
-		
-}
-
 h1 {
-	font-size: 50px;
-	line-height: 1;
+  text-align: center;
+  border: 2px solid pink;
+  border-radius: 35%;
+}
+.card {
+  display: inline-block;
+  padding: 15px;
+  margin: 30px;
+  border: 1px solid pink;
 }
 
-h1 , h2 {
-	font-family:'Caveat', cursive;
-	margin: 0;
+img {
+  width: 560px;
+  height: 200px;
 }
 
-
-/*Profile---------------------------------*/
-
-header { background-color:darksalmon;
-	
+div {
+  background-color: #75daea;
 }
-
-
-
-
-/* Projects ------------------------------
- notes- figure out why hover is not working correctly*/
-
-.project a {
-	color:darkblue;
+header nav {
+  background-color: white;
 }
-
-.project {
-	background-color: antiquewhite;
+.icon img {
+  height: 25px;
+  width: 25px;
 }
-
-.project a {
-	color:blue;
+footer {
+  padding: 30px;
+  height: 200px;
+  text-align: center;
+  background-color: #75daea;
+  border: 2px solid #75daea;
+  border-radius: 10%;
 }
- .btn{
-	color:grey;
-	background:darksalmon;
-	text-decoration: none;
-	padding: 8px;
-	border-radius: 4px;
-	display: inline-block;
-		
-}
-
-
-.btn:hover {
-	background-color: rgba(246, 239, 238, 1)  80%;
-}
-
-.project-item {
-	overflow: hidden;
-	border-bottom: 1px dashed red;
-	padding: 25px 0;
-}
-
-.project-item img {
-	float: left;
-	margin: 20px;
-		
-}
-
-.project-item h3 {
-	margin-top: 0;
-}
-
-
-/* Work Experience--------------------------*/
-
-.work{
-	background-color: rgba(204, 232, 204, 1);
-}
-
-/* Education---------------------------------*/
-
-.education{
-	background-color:rgba(246, 239, 238, 1);
-}
-
-
-/* Contact ----------------------------------*/
-
-.contact {
-	background-color:rgba(226, 182, 207, 1);
-}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
